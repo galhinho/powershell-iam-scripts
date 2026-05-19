@@ -19,6 +19,7 @@
 # Direct AD/Okta changes should be reconciled back to SailPoint
 # to maintain governance integrity and prevent access drift.
 #
+
 # --- CONFIGURATION ---
 # Define the new user's details - in production these would come from
 # an HR system feed or ITSM ticket (e.g. ServiceNow)
