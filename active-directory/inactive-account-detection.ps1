@@ -20,7 +20,7 @@
 # used for manual remediation and audit tasks outside of SailPoint workflows.
 # Direct AD/Okta changes should be reconciled back to SailPoint
 # to maintain governance integrity and prevent access drift.
-
+#
 
 # --- CONFIGURATION ---
 # Define inactivity threshold - 90 days is industry standard
