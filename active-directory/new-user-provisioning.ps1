@@ -8,7 +8,17 @@
 # Prerequisites: ActiveDirectory PowerShell module, Domain Admin or
 #                delegated account creation permissions
 # =============================================================================
-
+#
+# --- ARCHITECTURE NOTE ---
+# In this environment SailPoint IdentityNow acts as the Identity Governance
+# source of truth. User provisioning, deprovisioning, and access changes
+# are typically initiated and governed by SailPoint workflows.
+# These scripts represent the downstream execution layer —
+# they would be triggered by SailPoint provisioning policies or
+# used for manual remediation and audit tasks outside of SailPoint workflows.
+# Direct AD/Okta changes should be reconciled back to SailPoint
+# to maintain governance integrity and prevent access drift.
+#
 # --- CONFIGURATION ---
 # Define the new user's details - in production these would come from
 # an HR system feed or ITSM ticket (e.g. ServiceNow)

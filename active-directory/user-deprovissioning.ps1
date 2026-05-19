@@ -10,7 +10,17 @@
 # Security Note: This script should be executed immediately upon termination
 #                notification - delayed deprovisioning is a critical security risk
 # =============================================================================
-
+#
+# --- ARCHITECTURE NOTE ---
+# In this environment SailPoint IdentityNow acts as the Identity Governance
+# source of truth. User provisioning, deprovisioning, and access changes
+# are typically initiated and governed by SailPoint workflows.
+# These scripts represent the downstream execution layer —
+# they would be triggered by SailPoint provisioning policies or
+# used for manual remediation and audit tasks outside of SailPoint workflows.
+# Direct AD/Okta changes should be reconciled back to SailPoint
+# to maintain governance integrity and prevent access drift.
+#
 # --- CONFIGURATION ---
 # In production this would come from an HR system or ServiceNow ticket
 $Username       = "john.doe"

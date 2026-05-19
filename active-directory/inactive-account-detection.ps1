@@ -10,6 +10,17 @@
 # Security Context: CIS Control 5.3 - Disable Dormant Accounts
 #                   ISO 27001 A.9.2.5 - Review of user access rights
 # =============================================================================
+#
+# --- ARCHITECTURE NOTE ---
+# In this environment SailPoint IdentityNow acts as the Identity Governance
+# source of truth. User provisioning, deprovisioning, and access changes
+# are typically initiated and governed by SailPoint workflows.
+# These scripts represent the downstream execution layer —
+# they would be triggered by SailPoint provisioning policies or
+# used for manual remediation and audit tasks outside of SailPoint workflows.
+# Direct AD/Okta changes should be reconciled back to SailPoint
+# to maintain governance integrity and prevent access drift.
+
 
 # --- CONFIGURATION ---
 # Define inactivity threshold - 90 days is industry standard
