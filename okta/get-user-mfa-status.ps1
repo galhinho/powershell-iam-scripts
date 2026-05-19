@@ -10,7 +10,7 @@
 # Security Context: NIST 800-63B - Multi-Factor Authentication requirements
 #                   ISO 27001 A.9.4.2 - Secure log-on procedures
 # =============================================================================
-#
+
 # --- ARCHITECTURE NOTE ---
 # In this environment SailPoint IdentityNow acts as the Identity Governance
 # source of truth. User provisioning, deprovisioning, and access changes
